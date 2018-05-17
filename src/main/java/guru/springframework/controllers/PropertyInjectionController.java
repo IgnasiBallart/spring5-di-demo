@@ -1,12 +1,16 @@
 package guru.springframework.controllers;
 
-import guru.springframework.services.GreetingService;
+import guru.springframework.services.impl.GreetingServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class PropertyInjectionController {
 
-    public GreetingService greetingService;
+    @Autowired
+    public GreetingServiceImpl greetingService;
 
-    String sayHello(){
+    public String sayHello(){
         return greetingService.sayGreeting();
     }
 }

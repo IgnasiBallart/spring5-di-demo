@@ -1,9 +1,10 @@
-package guru.springframework.services;
+package guru.springframework.services.impl;
 
+import guru.springframework.services.GreetingService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements GreetingService{
+public class GreetingServiceImpl implements GreetingService {
 
     public static final String HELLO_GURUS = "Hello Gurus!!!";
 
